@@ -1,0 +1,6 @@
+type Video @model {
+  id: ID!
+  image: String
+	name: String
+	content: String
+}
