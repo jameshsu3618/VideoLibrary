@@ -8,6 +8,9 @@ export const getVideo = /* GraphQL */ `
       image
       name
       content
+      createdAt
+      updatedAt
+      type
     }
   }
 `;
@@ -23,6 +26,9 @@ export const listVideos = /* GraphQL */ `
         image
         name
         content
+        createdAt
+        updatedAt
+        type
       }
       nextToken
     }

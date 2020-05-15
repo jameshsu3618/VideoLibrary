@@ -11,6 +11,9 @@ export const createVideo = /* GraphQL */ `
       image
       name
       content
+      createdAt
+      updatedAt
+      type
     }
   }
 `;
@@ -24,6 +27,9 @@ export const updateVideo = /* GraphQL */ `
       image
       name
       content
+      createdAt
+      updatedAt
+      type
     }
   }
 `;
@@ -37,6 +43,9 @@ export const deleteVideo = /* GraphQL */ `
       image
       name
       content
+      createdAt
+      updatedAt
+      type
     }
   }
 `;

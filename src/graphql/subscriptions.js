@@ -8,6 +8,9 @@ export const onCreateVideo = /* GraphQL */ `
       image
       name
       content
+      createdAt
+      updatedAt
+      type
     }
   }
 `;
@@ -18,6 +21,9 @@ export const onUpdateVideo = /* GraphQL */ `
       image
       name
       content
+      createdAt
+      updatedAt
+      type
     }
   }
 `;
@@ -28,6 +34,9 @@ export const onDeleteVideo = /* GraphQL */ `
       image
       name
       content
+      createdAt
+      updatedAt
+      type
     }
   }
 `;
