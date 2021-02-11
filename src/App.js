@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import { API, graphqlOperation } from 'aws-amplify'
 import { createVideo } from './graphql/mutations'
-import { listVideos } from './graphql/queries'
-import { withAuthenticator } from '@aws-amplify/ui-react'
 import { Storage } from 'aws-amplify';
 import ReactPlayer from 'react-player';
 import awsconfig from "./s3-exports";
 import youtube from "./api/youtube"
 import {Card,Button } from 'react-bootstrap'
+import { withAuthenticator } from '@aws-amplify/ui-react';
+
 
 const initialState = {term: 'Default text'}
 const App = () => {
@@ -24,7 +24,6 @@ const App = () => {
   }, [])
 
   const ytLink = 'https://www.youtube.com/watch?v='
-
 
 
   function upload(e){
@@ -65,7 +64,7 @@ const App = () => {
         part: 'snippet',
         type: 'video',
         maxResults: 15,
-        key: 'AIzaSyADbtCSQdneAlFJaKB-YSBQmU7MNdtGyDs'
+        key: 'AIzaSyA4KnjxRovi7b4vxD4i57XOFOymoj9x5ag'
       }
     })
     const ytVideos = response.data.items
@@ -140,4 +139,4 @@ const styles = {
   button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' }
 }
 
-export default App
+export default withAuthenticator(App)

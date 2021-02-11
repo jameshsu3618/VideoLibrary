@@ -24,5 +24,18 @@
 			"dependsOn": [],
 			"customAuth": false
 		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"providerPlugin": "awscloudformation",
+			"type": "manual"
+		}
+	},
+	"storage": {
+		"videoupload1": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
 	}
 }

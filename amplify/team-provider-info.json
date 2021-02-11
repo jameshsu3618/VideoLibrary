@@ -14,6 +14,12 @@
         "categories": {
             "auth": {
                 "jamesyoutubelibrarydfafe42f": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3k3z1sctxk4al",
+                    "type": "manual"
+                }
             }
         }
     }

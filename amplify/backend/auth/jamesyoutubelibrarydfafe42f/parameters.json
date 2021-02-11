@@ -1,6 +1,6 @@
 {
     "identityPoolName": "jamesyoutubelibrarydfafe42f_identitypool_dfafe42f",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "jamesydfafe42f",
     "userPoolName": "jamesyoutubelibrarydfafe42f_userpool_dfafe42f",
     "autoVerifiedAttributes": [

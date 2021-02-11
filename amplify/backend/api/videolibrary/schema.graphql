@@ -3,4 +3,7 @@ type Video @model {
   image: String
 	name: String
 	content: String
+  type: String
+  createdAt: String
+  updatedAt: String
 }
